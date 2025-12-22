@@ -8,12 +8,13 @@ export default function CallToAction() {
          const [scope, animate] = useAnimate();
 
 
-     useEffect(()=>{
-          animation.current = animate(scope.current, {x: '-50%'}, {duration:30, ease: 'linear', repeat: Infinity} 
-
-          );
-        },[]);
-
+        useEffect(() => {
+                animation.current = animate(
+                    scope.current,
+                    { x: "-50%" },
+                    { duration: 30, ease: "linear", repeat: Infinity }
+                );
+            }, []);
     
      useEffect(()=>{
          if (animation.current){
